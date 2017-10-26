@@ -1,0 +1,5 @@
+2017_10_26-16_28_05 Accumulation Values - Local Execution 
+Reading file: F170404.txt
+Total unique accounts: 197655
+Read file execution time: 0:00:02.159842
+Accumulating values ... 
