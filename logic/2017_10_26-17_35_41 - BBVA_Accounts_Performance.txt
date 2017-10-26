@@ -1,0 +1,7 @@
+2017_10_26-17_35_41 Accumulation Values - Local Execution 
+Reading file: F170404.txt
+Total unique accounts: 197655
+Accumulation values execution time: 0:00:09.065105
+Total good accounts: 195148
+Total bad accounts: 2507
+Results generation execution time: 0:00:15.416494

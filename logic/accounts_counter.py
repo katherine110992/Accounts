@@ -43,9 +43,11 @@ execution_time = time() - start_time
 p_file.write("Accumulation values execution time: " + str(timedelta(seconds=execution_time)) + "\n")
 p_file.flush()
 
-result_file = open("BBVA_Accounts-Results.csv", 'a')
-good_accounts_file = open("BBVA_Accounts-GoodAccountsResults.csv", 'a')
-bad_accounts_file = open("BBVA_Accounts-BadAccountsResults.csv", 'a')
+path = BBVA_Accounts_root.ROOT_DIR + os.path.sep + 'results' + os.path.sep
+
+result_file = open(path + "BBVA_Accounts-Results.csv", 'a')
+good_accounts_file = open(path + "BBVA_Accounts-GoodAccountsResults.csv", 'a')
+bad_accounts_file = open(path + "BBVA_Accounts-BadAccountsResults.csv", 'a')
 
 count = 0
 
@@ -66,9 +68,9 @@ for account in bbva_accumulator:
     count += 1
     print(count)
 
-p_file.write("Total good accounts: " + str(len(good_accounts_count)) + "\n")
+p_file.write("Total good accounts: " + str(good_accounts_count) + "\n")
 p_file.flush()
-p_file.write("Total bad accounts: " + str(len(bad_accounts_count)) + "\n")
+p_file.write("Total bad accounts: " + str(bad_accounts_count) + "\n")
 p_file.flush()
 execution_time = time() - start_time
 p_file.write("Results generation execution time: " + str(timedelta(seconds=execution_time)) + "\n")
